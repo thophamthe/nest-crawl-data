@@ -15,7 +15,4 @@ export class CreateSearchDto {
   @IsInt()
   @Min(0)
   price: number;
-
-  @IsNotEmpty()
-  source: string;
 }
