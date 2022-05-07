@@ -39,7 +39,15 @@ export class SearchController {
         url = this.custom.customPhongTro123(createSearchDto);
         dataResult = await this.search.crawlPhongTro123(url);
         break;
+      case 'batdongsan':
+        url = this.custom.customBatDongSan(createSearchDto);
 
+        dataResult = await this.search.crawlBatDongSan(url);
+        break;
+      case 'chotot':
+        url = this.custom.customChoTot(createSearchDto);
+        dataResult = await this.search.crawlChoTot(url);
+        break;
       default:
         dataResult = [];
         break;
